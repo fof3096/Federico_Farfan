@@ -3,6 +3,7 @@
   --secondary-color: #7209B7;
   --font-color: #3A0CA3;
   --background-color: #FEFAE0;
+  --semi-primary-color: #f7258458;
   --title-size: 1.5rem;
   --footer-size: 1rem;
 }
@@ -26,7 +27,7 @@ body {
 }
 
 .main__contact {
-  padding: 2.5em 1em;
+  padding: 4.7em 1em;
   display: flex;
   gap: 1.5em;
   order: 1;
@@ -37,7 +38,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 
 .main__container__option {
   border-left: 8px solid var(--secondary-color);
@@ -59,22 +59,111 @@ body {
 }
 
 .main__container__option.active .main__container__option__content {
-  max-height: 1000px;
+  max-height: 3000px;
   padding-bottom: 4.5em;
 }
 
-.main__container__option__content h4 {
+.home__content h3 {
   color: var(--primary-color);
   margin: 0;
   font-size: 2.12rem;
 }
 
-.main__container__option__content h4:last-of-type {
+.home__content h3:last-of-type {
   color: var(--font-color);
 }
 
-.main__container__option__content p {
+.about__content p {
   font-size: 1.2rem;
+}
+
+.about__content ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+}
+
+.about__content div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  margin-top: 2.35em;
+
+  h5 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: .9rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: .9rem;
+  }
+}
+
+.main__container__option__content div:last-of-type {
+  margin-top: 2em;
+}
+
+.projects__content {
+  display: flex;
+  flex-direction: column;
+  gap: 7em;
+}
+
+.projects__content div figure {
+  background-color: var(--semi-primary-color);
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+
+  img {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.projects__content div h4 {
+  font-size: 1.12rem;
+  margin: 1em .3em .5em;
+}
+
+.projects__content div p:first-of-type {
+  margin-top: 0;
+  margin-left: .3em;
+}
+
+.projects__content div p {
+  font-size: 1rem;
+}
+
+.projects__content div p:last-of-type {
+  margin-top: -1em;
+  margin-left: 0;
+}
+
+.projects__content div ul {
+  border-bottom: 1px solid var(--secondary-color);
+  list-style: none;
+  padding: 0;
+  margin-left: .3em;
+
+  li {
+    display: flex;
+    align-items: start;
+    gap: 0.5em;
+    margin-bottom: 1em
+  }
+}
+
+.projects__content div a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .footer {
