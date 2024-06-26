@@ -19,10 +19,13 @@ body {
   font-family: 'Comfortaa', sans-serif;
   min-height: 100vh;
   padding-top: 1px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   margin: 3em var(--left-space);
 }
@@ -30,6 +33,8 @@ body {
 .main__contact {
   padding: 6em 1em 3.4em;
   display: flex;
+  flex-grow: 1;
+  align-items: end;
   gap: 1.5em;
   order: 1;
   border-left: 8px solid var(--secondary-color);
@@ -60,7 +65,7 @@ body {
 }
 
 .main__container__option.active .main__container__option__content {
-  max-height: 3000px;
+  max-height: 3500px;
   padding-bottom: 4.76em;
 }
 
