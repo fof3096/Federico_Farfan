@@ -259,6 +259,10 @@ body {
   animation: ping 1.5s infinite ease;
 }
 
+.footer div:first-of-type p {
+  display: none;
+}
+
 .footer__call {
   display: flex;
   gap: .7em;
@@ -284,6 +288,10 @@ body {
 
 .footer__data {
   padding-left: var(--left-space);
+
+  a {
+    display: none;
+  }
 }
 
 .footer__data span {
@@ -426,6 +434,54 @@ body {
 
     li {
       font-size: var(--projects-text-size);
+    }
+  }
+
+  .footer { 
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5em 0 1em;
+    padding-right: 49.98px;
+  }
+
+  .footer div:first-of-type p {
+    margin-left: calc(var(--left-space) + 30px);
+    display: block;
+  }
+
+  .footer__action {
+    margin: 0;
+    margin-bottom: .5em;
+  }
+
+  .footer__call__text {
+    max-width: 360px;
+  }
+
+  .footer__call {
+    display: none;
+  }
+
+  .footer__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4em;
+
+    a {
+      display: block;
+      border: 1px solid var(--font-color);
+      color: var(--font-color);
+      width: 220px;
+      height: 72px;
+      margin-left: auto;
+      line-height: 72px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0;
     }
   }
 }
