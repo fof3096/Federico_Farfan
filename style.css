@@ -333,13 +333,16 @@ body {
     margin-top: 0;
   }
 
+  .projects__content {
+    gap: 9em;
+  }
+
   .projects__content__project {
     display: flex;
     align-items: center;
     width: 80%;
     gap: 6.2em;
     margin-left: 2.5em;
-    border: 1px peru solid;
   }
 
   .projects__content__picture {
@@ -375,6 +378,7 @@ body {
   }
 
   .projects__content__description {
+    width: 70%;
     position: relative;
     display: flex;
     flex-direction: column;
