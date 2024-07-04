@@ -325,6 +325,7 @@ body {
     order: 0;
     align-items: start;
     flex-direction: column;
+    flex-grow: 0;
     border: none;
     padding: 1.66em var(--left-space) 0 0;
   }
@@ -348,6 +349,64 @@ body {
 
   .main__container__option__content div:last-of-type {
     margin-top: 0;
+  }
+
+  .projects__content {
+    max-width: 850px;
+  }
+
+  .footer { 
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5em 0 1em;
+    padding-right: 49.98px;
+  }
+
+  .footer div:first-of-type p {
+    margin-left: calc(var(--left-space) + 30px);
+    display: block;
+  }
+
+  .footer__action {
+    margin: 0;
+    margin-bottom: .5em;
+  }
+
+  .footer__call__text {
+    max-width: 360px;
+  }
+
+  .footer__call {
+    display: none;
+  }
+
+  .footer__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4em;
+
+    a {
+      display: block;
+      border: 1px solid var(--font-color);
+      color: var(--font-color);
+      width: 220px;
+      height: 72px;
+      margin-left: auto;
+      line-height: 72px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .projects__content, .home__content, .about__content p {
+    max-width: 1800px;
   }
 
   .projects__content {
@@ -434,54 +493,6 @@ body {
 
     li {
       font-size: var(--projects-text-size);
-    }
-  }
-
-  .footer { 
-    display: flex;
-    justify-content: space-between;
-    padding: 2.5em 0 1em;
-    padding-right: 49.98px;
-  }
-
-  .footer div:first-of-type p {
-    margin-left: calc(var(--left-space) + 30px);
-    display: block;
-  }
-
-  .footer__action {
-    margin: 0;
-    margin-bottom: .5em;
-  }
-
-  .footer__call__text {
-    max-width: 360px;
-  }
-
-  .footer__call {
-    display: none;
-  }
-
-  .footer__data {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 4em;
-
-    a {
-      display: block;
-      border: 1px solid var(--font-color);
-      color: var(--font-color);
-      width: 220px;
-      height: 72px;
-      margin-left: auto;
-      line-height: 72px;
-      text-align: center;
-      text-decoration: none;
-    }
-
-    p {
-      margin: 0;
     }
   }
 }
