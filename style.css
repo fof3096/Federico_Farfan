@@ -4,7 +4,7 @@
   --secondary-color: #7209B7;
   --font-color: #3A0CA3;
   --background-color: #FEFAE0;
-  --semi-primary-color: #f7258458;
+  --semi-primary-color: #f7258432;
   /* Font-size */
   --option-size: 1.5rem;
   --home-size: 2.12rem;
@@ -146,6 +146,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  transition: background-color .5s;
 
   img {
     position: relative;
@@ -155,6 +156,10 @@ body {
     z-index: -1;
     display: block;
   }
+}
+
+.projects__content__picture figure:hover {
+  background-color: transparent;
 }
 
 .projects__content__picture ul {
@@ -315,6 +320,7 @@ body {
     --projects-text-size: 1.17rem;
     --left-space: 2.94em;
     --project-description-icons-size: 27px;
+  --semi-primary-color: #f7258458;
   }
 
   .main {
@@ -396,6 +402,12 @@ body {
       line-height: 72px;
       text-align: center;
       text-decoration: none;
+      transition: background-color .5s;
+    }
+
+    a:hover {
+      color: var(--background-color);
+      background-color: var(--font-color);
     }
 
     p {
