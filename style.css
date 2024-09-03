@@ -38,6 +38,7 @@ body {
   flex-grow: 1;
   flex-direction: column;
   margin: 3em var(--left-space);
+  min-height: 90dvh;
 }
 
 .main__contact {
@@ -364,7 +365,7 @@ body {
   .footer { 
     display: flex;
     justify-content: space-between;
-    padding: 2.5em 0 1em;
+    padding: 1.9em 0 1em;
     padding-right: 49.98px;
   }
 
