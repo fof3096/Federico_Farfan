@@ -104,6 +104,14 @@ body {
   font-size: var(--about-size);
 }
 
+.about__content p:first-of-type {
+  display: block;
+}
+
+.about__content p:nth-of-type(2) {
+  display: none;
+}
+
 .about__content ul {
   display: flex;
   flex-wrap: wrap;
@@ -321,7 +329,7 @@ body {
     --projects-text-size: 1.17rem;
     --left-space: 2.94em;
     --project-description-icons-size: 27px;
-  --semi-primary-color: #f7258458;
+    --semi-primary-color: #f7258458;
   }
 
   .main {
@@ -352,6 +360,14 @@ body {
 
   .about__content div:first-of-type {
     margin-right: 7.7em;
+  }
+
+  .about__content p:first-of-type {
+    display: none;
+  }
+
+  .about__content p:nth-of-type(2) {
+    display: block;
   }
 
   .main__container__option__content div:last-of-type {
